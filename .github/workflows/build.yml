@@ -101,6 +101,7 @@ jobs:
           if [ -z "$GAME" ]; then echo "::error::저장소 맨 위에 게임 html 파일(2026worldcup-game.html)을 올려 주세요"; exit 1; fi
           echo "game file: $GAME"
           cp "$GAME" _app/app/src/main/assets/index.html
+          if [ -f icon/ic_launcher.png ]; then rm -f _app/app/src/main/res/drawable/ic_launcher.xml; mkdir -p _app/app/src/main/res/drawable-nodpi; cp icon/ic_launcher.png _app/app/src/main/res/drawable-nodpi/ic_launcher.png; fi
           if [ -d anthem ]; then cp -r anthem _app/app/src/main/assets/anthem; fi
       - name: Build debug APK
         run: gradle -p _app assembleDebug --no-daemon --stacktrace
