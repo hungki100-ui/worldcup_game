@@ -900,6 +900,7 @@ btn.onclick=()=>open(0);ob.onclick=()=>open(1);$('tp-x').onclick=()=>md.classLis
 }
 })();</script><script id="olg">/* OLG: 메인 화면 다국어 — 방패(팀 앰블럼) 화면에서 24개 언어 선택 + 게임으로 가기 버튼. 한국어 원문 → 현지어는 anthem/lang/<언어>.o.json 으로 변환(없는 글은 영어) */
 (function(){try{
+const FG={en:'🇬🇧',ko:'🇰🇷',ja:'🇯🇵',zh:'🇨🇳',es:'🇪🇸',fr:'🇫🇷',de:'🇩🇪',pt:'🇵🇹',ar:'🇸🇦',tr:'🇹🇷',nl:'🇳🇱',sv:'🇸🇪',hr:'🇭🇷',cs:'🇨🇿',nb:'🇳🇴',it:'🇮🇹',ru:'🇷🇺',fa:'🇮🇷',uz:'🇺🇿',bs:'🇧🇦',af:'🇿🇦',ht:'🇭🇹',zu:'🇿🇦',mi:'🇳🇿'};
 const UN=[['en','English'],['ko','한국어'],['ja','日本語'],['zh','中文'],['es','Español'],['fr','Français'],['de','Deutsch'],['pt','Português'],['ar','العربية'],['tr','Türkçe'],['nl','Nederlands'],['sv','Svenska'],['hr','Hrvatski'],['cs','Čeština'],['nb','Norsk'],['it','Italiano'],['ru','Русский'],['fa','فارسی'],['uz','O‘zbekcha'],['bs','Bosanski'],['af','Afrikaans'],['ht','Kreyòl ayisyen'],['zu','isiZulu'],['mi','Te Reo Māori']];
 const $=id=>document.getElementById(id),KR=/[가-힣]/;
 let cur='en';try{const sv=localStorage.getItem('ul2');if(sv&&UN.some(u=>u[0]===sv))cur=sv;}catch(e){}
@@ -926,11 +927,11 @@ const st=document.createElement('style');st.textContent='#lgrow{display:flex;gap
 const bem=$('bem');
 if(bem){const old=bem.onclick;bem.onclick=function(){old&&old.apply(this,arguments);try{const o=$('ov-e');if(!o)return;const f=o.querySelector('iframe');
   const t=document.createElement('div');t.id='lgt';t.textContent='🌐 언어 선택';const row=document.createElement('div');row.id='lgrow';
-  UN.forEach(u=>{const b=document.createElement('button');b.type='button';b.dataset.l=u[0];b.textContent=u[1];if(u[0]===cur)b.className='on';b.onclick=()=>O.setLang(u[0]);row.appendChild(b);});
+  UN.forEach(u=>{const b=document.createElement('button');b.type='button';b.dataset.l=u[0];b.textContent=(FG[u[0]]||'')+' '+u[1];if(u[0]===cur)b.className='on';b.onclick=()=>O.setLang(u[0]);row.appendChild(b);});
   o.insertBefore(t,f);o.insertBefore(row,f);
   const g=document.createElement('button');g.id='gogame';g.type='button';g.textContent='⚽ 게임으로 가기';g.onclick=()=>{o.classList.remove('show');try{f&&f.remove();}catch(e){}try{window.__fsOn&&0;}catch(e){}const m=$('bm');if(m)m.click();};o.appendChild(g);
   const a=row.querySelector('.on');if(a&&a.scrollIntoView)a.scrollIntoView({inline:'center',block:'nearest'});O.walk(o);}catch(e){O.err=String(e);}};
-  const home=$('home');if(home){const p=document.createElement('button');p.id='lgp';p.type='button';p.setAttribute('aria-label','Language');const sync=()=>{p.textContent='🌐 '+cur.toUpperCase();};sync();p.onclick=()=>bem.click();home.appendChild(p);const _s=O.setLang;O.setLang=async function(l){await _s(l);sync();};}}
+  const home=$('home');if(false&&home){const p=document.createElement('button');p.id='lgp';p.type='button';p.setAttribute('aria-label','Language');const sync=()=>{p.textContent='🌐 '+cur.toUpperCase();};sync();p.onclick=()=>bem.click();home.appendChild(p);const _s=O.setLang;O.setLang=async function(l){await _s(l);sync();};}}
 
 // ---- 시작(앰블럼) 화면(#csp): 메인 화면 전에 언어 선택
 try{
@@ -940,7 +941,7 @@ if(csp){
  const sty=document.createElement('style');sty.textContent='#lgrow2{position:absolute;left:0;right:0;bottom:calc(46px + env(safe-area-inset-bottom,0px));z-index:5;display:flex;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch;padding:6px max(14px,env(safe-area-inset-right)) 8px max(14px,env(safe-area-inset-left));scrollbar-width:none;align-items:center}#lgrow2::-webkit-scrollbar{display:none}#lgrow2 i{flex:0 0 auto;font-style:normal;font-size:16px;opacity:.85;color:#fff}#lgrow2 button{flex:0 0 auto;padding:7px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.28);background:rgba(0,0,0,.45);color:#fff;font-size:13px;font-weight:700;white-space:nowrap;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}#lgrow2 button.on{background:linear-gradient(150deg,#f4c542,#c8921a);color:#1a1200;border-color:#f4c542}';document.head.appendChild(sty);
  const row=document.createElement('div');row.id='lgrow2';row.setAttribute('data-nox','1');
  const gl=document.createElement('i');gl.textContent='🌐';row.appendChild(gl);
- UN.forEach(u=>{const b=document.createElement('button');b.type='button';b.dataset.l=u[0];b.textContent=u[1];if(u[0]===cur)b.className='on';b.onclick=ev=>{ev.stopPropagation();O.setLang(u[0]);};row.appendChild(b);});
+ UN.forEach(u=>{const b=document.createElement('button');b.type='button';b.dataset.l=u[0];b.textContent=(FG[u[0]]||'')+' '+u[1];if(u[0]===cur)b.className='on';b.onclick=ev=>{ev.stopPropagation();O.setLang(u[0]);};row.appendChild(b);});
  ['pointerdown','pointerup','touchstart','click'].forEach(ev=>row.addEventListener(ev,e=>e.stopPropagation()));
  csp.appendChild(row);
  const spTxt=()=>{try{const f=csp.querySelector('iframe'),d=f&&f.contentDocument;if(!d)return;const v=SP[cur]||SP.en,t=d.querySelector('.tip'),n=d.getElementById('nm');if(t){t.textContent=v[1];t.dir=(cur==='ar'||cur==='fa')?'rtl':'ltr';}if(n)n.textContent=v[0];}catch(e){}};
