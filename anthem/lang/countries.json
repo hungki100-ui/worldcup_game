@@ -1,0 +1,1152 @@
+{
+ "version": 1,
+ "levels": {
+  "A": "캐스터·안내 모두 현지어",
+  "B": "캐스터 현지어 + 핵심 UI 현지어, 긴 안내는 영어",
+  "C": "캐스터 현지어, UI·안내는 영어",
+  "D": "캐스터도 불가"
+ },
+ "countries": [
+  {
+   "no": 1,
+   "group": "A",
+   "ko": "멕시코",
+   "en": "Mexico",
+   "lang": "es",
+   "lang_name": "Español",
+   "others": [
+    "(원주민어 다수)"
+   ],
+   "ui_pack": "파일 팩(핵심 56항목)",
+   "caster": "가능",
+   "caster_code": "es",
+   "level": "B 캐스터 + 핵심 UI",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "",
+   "unsupported_langs": [
+    "(원주민어 다수)"
+   ]
+  },
+  {
+   "no": 2,
+   "group": "A",
+   "ko": "남아공",
+   "en": "South Africa",
+   "lang": "en",
+   "lang_name": "English",
+   "others": [
+    "Afrikaans",
+    "isiZulu",
+    "(코사·세소토 등)"
+   ],
+   "ui_pack": "내장(전체)",
+   "caster": "가능",
+   "caster_code": "en",
+   "level": "A 완전 지원",
+   "long_notice": "한국어/영어 문장 전체",
+   "note": "공용어 12개",
+   "unsupported_langs": [
+    "(코사·세소토 등)"
+   ]
+  },
+  {
+   "no": 3,
+   "group": "A",
+   "ko": "대한민국",
+   "en": "South Korea",
+   "lang": "ko",
+   "lang_name": "한국어",
+   "others": [],
+   "ui_pack": "내장(전체)",
+   "caster": "가능",
+   "caster_code": "ko",
+   "level": "A 완전 지원",
+   "long_notice": "한국어/영어 문장 전체",
+   "note": "",
+   "unsupported_langs": []
+  },
+  {
+   "no": 4,
+   "group": "A",
+   "ko": "체코",
+   "en": "Czechia",
+   "lang": "cs",
+   "lang_name": "Čeština",
+   "others": [],
+   "ui_pack": "없음 → 영어로 대체",
+   "caster": "가능",
+   "caster_code": "cs",
+   "level": "C 캐스터만 (안내는 영어)",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "",
+   "unsupported_langs": []
+  },
+  {
+   "no": 5,
+   "group": "B",
+   "ko": "캐나다",
+   "en": "Canada",
+   "lang": "en",
+   "lang_name": "English",
+   "others": [
+    "Français"
+   ],
+   "ui_pack": "내장(전체)",
+   "caster": "가능",
+   "caster_code": "en",
+   "level": "A 완전 지원",
+   "long_notice": "한국어/영어 문장 전체",
+   "note": "",
+   "unsupported_langs": []
+  },
+  {
+   "no": 6,
+   "group": "B",
+   "ko": "보스니아",
+   "en": "Bosnia & Herz.",
+   "lang": "bs",
+   "lang_name": "Bosanski",
+   "others": [
+    "Hrvatski",
+    "(세르비아어)"
+   ],
+   "ui_pack": "없음 → 영어로 대체",
+   "caster": "가능",
+   "caster_code": "bs",
+   "level": "C 캐스터만 (안내는 영어)",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "",
+   "unsupported_langs": [
+    "(세르비아어)"
+   ]
+  },
+  {
+   "no": 7,
+   "group": "B",
+   "ko": "카타르",
+   "en": "Qatar",
+   "lang": "ar",
+   "lang_name": "العربية",
+   "others": [
+    "English"
+   ],
+   "ui_pack": "없음 → 영어로 대체",
+   "caster": "가능",
+   "caster_code": "ar",
+   "level": "C 캐스터만 (안내는 영어)",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "",
+   "unsupported_langs": []
+  },
+  {
+   "no": 8,
+   "group": "B",
+   "ko": "스위스",
+   "en": "Switzerland",
+   "lang": "de",
+   "lang_name": "Deutsch",
+   "others": [
+    "Français",
+    "Italiano",
+    "(로망슈어)"
+   ],
+   "ui_pack": "파일 팩(핵심 56항목)",
+   "caster": "가능",
+   "caster_code": "de",
+   "level": "B 캐스터 + 핵심 UI",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "4개 공용어",
+   "unsupported_langs": [
+    "(로망슈어)"
+   ]
+  },
+  {
+   "no": 9,
+   "group": "C",
+   "ko": "브라질",
+   "en": "Brazil",
+   "lang": "pt",
+   "lang_name": "Português",
+   "others": [],
+   "ui_pack": "파일 팩(핵심 56항목)",
+   "caster": "가능",
+   "caster_code": "pt",
+   "level": "B 캐스터 + 핵심 UI",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "",
+   "unsupported_langs": []
+  },
+  {
+   "no": 10,
+   "group": "C",
+   "ko": "모로코",
+   "en": "Morocco",
+   "lang": "ar",
+   "lang_name": "العربية",
+   "others": [
+    "Français",
+    "(타마지트)"
+   ],
+   "ui_pack": "없음 → 영어로 대체",
+   "caster": "가능",
+   "caster_code": "ar",
+   "level": "C 캐스터만 (안내는 영어)",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "",
+   "unsupported_langs": [
+    "(타마지트)"
+   ]
+  },
+  {
+   "no": 11,
+   "group": "C",
+   "ko": "아이티",
+   "en": "Haiti",
+   "lang": "ht",
+   "lang_name": "Kreyòl ayisyen",
+   "others": [
+    "Français"
+   ],
+   "ui_pack": "없음 → 영어로 대체",
+   "caster": "가능",
+   "caster_code": "ht",
+   "level": "C 캐스터만 (안내는 영어)",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "",
+   "unsupported_langs": []
+  },
+  {
+   "no": 12,
+   "group": "C",
+   "ko": "스코틀랜드",
+   "en": "Scotland",
+   "lang": "en",
+   "lang_name": "English",
+   "others": [
+    "(스코츠어·게일어)"
+   ],
+   "ui_pack": "내장(전체)",
+   "caster": "가능",
+   "caster_code": "en",
+   "level": "A 완전 지원",
+   "long_notice": "한국어/영어 문장 전체",
+   "note": "",
+   "unsupported_langs": [
+    "(스코츠어·게일어)"
+   ]
+  },
+  {
+   "no": 13,
+   "group": "D",
+   "ko": "미국",
+   "en": "USA",
+   "lang": "en",
+   "lang_name": "English",
+   "others": [
+    "Español"
+   ],
+   "ui_pack": "내장(전체)",
+   "caster": "가능",
+   "caster_code": "en",
+   "level": "A 완전 지원",
+   "long_notice": "한국어/영어 문장 전체",
+   "note": "",
+   "unsupported_langs": []
+  },
+  {
+   "no": 14,
+   "group": "D",
+   "ko": "파라과이",
+   "en": "Paraguay",
+   "lang": "es",
+   "lang_name": "Español",
+   "others": [
+    "(과라니어)"
+   ],
+   "ui_pack": "파일 팩(핵심 56항목)",
+   "caster": "가능",
+   "caster_code": "es",
+   "level": "B 캐스터 + 핵심 UI",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "과라니어는 공용어지만 미지원",
+   "unsupported_langs": [
+    "(과라니어)"
+   ]
+  },
+  {
+   "no": 15,
+   "group": "D",
+   "ko": "호주",
+   "en": "Australia",
+   "lang": "en",
+   "lang_name": "English",
+   "others": [],
+   "ui_pack": "내장(전체)",
+   "caster": "가능",
+   "caster_code": "en",
+   "level": "A 완전 지원",
+   "long_notice": "한국어/영어 문장 전체",
+   "note": "",
+   "unsupported_langs": []
+  },
+  {
+   "no": 16,
+   "group": "D",
+   "ko": "튀르키예",
+   "en": "Türkiye",
+   "lang": "tr",
+   "lang_name": "Türkçe",
+   "others": [],
+   "ui_pack": "없음 → 영어로 대체",
+   "caster": "가능",
+   "caster_code": "tr",
+   "level": "C 캐스터만 (안내는 영어)",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "",
+   "unsupported_langs": []
+  },
+  {
+   "no": 17,
+   "group": "E",
+   "ko": "독일",
+   "en": "Germany",
+   "lang": "de",
+   "lang_name": "Deutsch",
+   "others": [],
+   "ui_pack": "파일 팩(핵심 56항목)",
+   "caster": "가능",
+   "caster_code": "de",
+   "level": "B 캐스터 + 핵심 UI",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "",
+   "unsupported_langs": []
+  },
+  {
+   "no": 18,
+   "group": "E",
+   "ko": "퀴라소",
+   "en": "Curaçao",
+   "lang": "nl",
+   "lang_name": "Nederlands",
+   "others": [
+    "English",
+    "(파피아멘토)"
+   ],
+   "ui_pack": "없음 → 영어로 대체",
+   "caster": "가능",
+   "caster_code": "nl",
+   "level": "C 캐스터만 (안내는 영어)",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "파피아멘토 미지원",
+   "unsupported_langs": [
+    "(파피아멘토)"
+   ]
+  },
+  {
+   "no": 19,
+   "group": "E",
+   "ko": "코트디부아르",
+   "en": "Ivory Coast",
+   "lang": "fr",
+   "lang_name": "Français",
+   "others": [],
+   "ui_pack": "파일 팩(핵심 56항목)",
+   "caster": "가능",
+   "caster_code": "fr",
+   "level": "B 캐스터 + 핵심 UI",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "",
+   "unsupported_langs": []
+  },
+  {
+   "no": 20,
+   "group": "E",
+   "ko": "에콰도르",
+   "en": "Ecuador",
+   "lang": "es",
+   "lang_name": "Español",
+   "others": [
+    "(케추아어)"
+   ],
+   "ui_pack": "파일 팩(핵심 56항목)",
+   "caster": "가능",
+   "caster_code": "es",
+   "level": "B 캐스터 + 핵심 UI",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "",
+   "unsupported_langs": [
+    "(케추아어)"
+   ]
+  },
+  {
+   "no": 21,
+   "group": "F",
+   "ko": "네덜란드",
+   "en": "Netherlands",
+   "lang": "nl",
+   "lang_name": "Nederlands",
+   "others": [],
+   "ui_pack": "없음 → 영어로 대체",
+   "caster": "가능",
+   "caster_code": "nl",
+   "level": "C 캐스터만 (안내는 영어)",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "",
+   "unsupported_langs": []
+  },
+  {
+   "no": 22,
+   "group": "F",
+   "ko": "일본",
+   "en": "Japan",
+   "lang": "ja",
+   "lang_name": "日本語",
+   "others": [],
+   "ui_pack": "파일 팩(핵심 56항목)",
+   "caster": "가능",
+   "caster_code": "ja",
+   "level": "B 캐스터 + 핵심 UI",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "",
+   "unsupported_langs": []
+  },
+  {
+   "no": 23,
+   "group": "F",
+   "ko": "스웨덴",
+   "en": "Sweden",
+   "lang": "sv",
+   "lang_name": "Svenska",
+   "others": [],
+   "ui_pack": "없음 → 영어로 대체",
+   "caster": "가능",
+   "caster_code": "sv",
+   "level": "C 캐스터만 (안내는 영어)",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "",
+   "unsupported_langs": []
+  },
+  {
+   "no": 24,
+   "group": "F",
+   "ko": "튀니지",
+   "en": "Tunisia",
+   "lang": "ar",
+   "lang_name": "العربية",
+   "others": [
+    "Français"
+   ],
+   "ui_pack": "없음 → 영어로 대체",
+   "caster": "가능",
+   "caster_code": "ar",
+   "level": "C 캐스터만 (안내는 영어)",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "",
+   "unsupported_langs": []
+  },
+  {
+   "no": 25,
+   "group": "G",
+   "ko": "벨기에",
+   "en": "Belgium",
+   "lang": "nl",
+   "lang_name": "Nederlands",
+   "others": [
+    "Français",
+    "Deutsch"
+   ],
+   "ui_pack": "없음 → 영어로 대체",
+   "caster": "가능",
+   "caster_code": "nl",
+   "level": "C 캐스터만 (안내는 영어)",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "3개 공용어",
+   "unsupported_langs": []
+  },
+  {
+   "no": 26,
+   "group": "G",
+   "ko": "이집트",
+   "en": "Egypt",
+   "lang": "ar",
+   "lang_name": "العربية",
+   "others": [],
+   "ui_pack": "없음 → 영어로 대체",
+   "caster": "가능",
+   "caster_code": "ar",
+   "level": "C 캐스터만 (안내는 영어)",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "",
+   "unsupported_langs": []
+  },
+  {
+   "no": 27,
+   "group": "G",
+   "ko": "이란",
+   "en": "Iran",
+   "lang": "fa",
+   "lang_name": "فارسی",
+   "others": [],
+   "ui_pack": "없음 → 영어로 대체",
+   "caster": "가능",
+   "caster_code": "fa",
+   "level": "C 캐스터만 (안내는 영어)",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "",
+   "unsupported_langs": []
+  },
+  {
+   "no": 28,
+   "group": "G",
+   "ko": "뉴질랜드",
+   "en": "New Zealand",
+   "lang": "en",
+   "lang_name": "English",
+   "others": [
+    "Te Reo Māori"
+   ],
+   "ui_pack": "내장(전체)",
+   "caster": "가능",
+   "caster_code": "en",
+   "level": "A 완전 지원",
+   "long_notice": "한국어/영어 문장 전체",
+   "note": "",
+   "unsupported_langs": []
+  },
+  {
+   "no": 29,
+   "group": "H",
+   "ko": "스페인",
+   "en": "Spain",
+   "lang": "es",
+   "lang_name": "Español",
+   "others": [
+    "(카탈루냐어·바스크어)"
+   ],
+   "ui_pack": "파일 팩(핵심 56항목)",
+   "caster": "가능",
+   "caster_code": "es",
+   "level": "B 캐스터 + 핵심 UI",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "",
+   "unsupported_langs": [
+    "(카탈루냐어·바스크어)"
+   ]
+  },
+  {
+   "no": 30,
+   "group": "H",
+   "ko": "카보베르데",
+   "en": "Cape Verde",
+   "lang": "pt",
+   "lang_name": "Português",
+   "others": [
+    "(크리올루)"
+   ],
+   "ui_pack": "파일 팩(핵심 56항목)",
+   "caster": "가능",
+   "caster_code": "pt",
+   "level": "B 캐스터 + 핵심 UI",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "크리올루 미지원",
+   "unsupported_langs": [
+    "(크리올루)"
+   ]
+  },
+  {
+   "no": 31,
+   "group": "H",
+   "ko": "사우디",
+   "en": "Saudi Arabia",
+   "lang": "ar",
+   "lang_name": "العربية",
+   "others": [],
+   "ui_pack": "없음 → 영어로 대체",
+   "caster": "가능",
+   "caster_code": "ar",
+   "level": "C 캐스터만 (안내는 영어)",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "",
+   "unsupported_langs": []
+  },
+  {
+   "no": 32,
+   "group": "H",
+   "ko": "우루과이",
+   "en": "Uruguay",
+   "lang": "es",
+   "lang_name": "Español",
+   "others": [],
+   "ui_pack": "파일 팩(핵심 56항목)",
+   "caster": "가능",
+   "caster_code": "es",
+   "level": "B 캐스터 + 핵심 UI",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "",
+   "unsupported_langs": []
+  },
+  {
+   "no": 33,
+   "group": "I",
+   "ko": "프랑스",
+   "en": "France",
+   "lang": "fr",
+   "lang_name": "Français",
+   "others": [],
+   "ui_pack": "파일 팩(핵심 56항목)",
+   "caster": "가능",
+   "caster_code": "fr",
+   "level": "B 캐스터 + 핵심 UI",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "",
+   "unsupported_langs": []
+  },
+  {
+   "no": 34,
+   "group": "I",
+   "ko": "세네갈",
+   "en": "Senegal",
+   "lang": "fr",
+   "lang_name": "Français",
+   "others": [
+    "(울로프어)"
+   ],
+   "ui_pack": "파일 팩(핵심 56항목)",
+   "caster": "가능",
+   "caster_code": "fr",
+   "level": "B 캐스터 + 핵심 UI",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "울로프어 미지원",
+   "unsupported_langs": [
+    "(울로프어)"
+   ]
+  },
+  {
+   "no": 35,
+   "group": "I",
+   "ko": "이라크",
+   "en": "Iraq",
+   "lang": "ar",
+   "lang_name": "العربية",
+   "others": [
+    "(쿠르드어)"
+   ],
+   "ui_pack": "없음 → 영어로 대체",
+   "caster": "가능",
+   "caster_code": "ar",
+   "level": "C 캐스터만 (안내는 영어)",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "쿠르드어 미지원",
+   "unsupported_langs": [
+    "(쿠르드어)"
+   ]
+  },
+  {
+   "no": 36,
+   "group": "I",
+   "ko": "노르웨이",
+   "en": "Norway",
+   "lang": "nb",
+   "lang_name": "Norsk",
+   "others": [],
+   "ui_pack": "없음 → 영어로 대체",
+   "caster": "가능",
+   "caster_code": "nb",
+   "level": "C 캐스터만 (안내는 영어)",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "",
+   "unsupported_langs": []
+  },
+  {
+   "no": 37,
+   "group": "J",
+   "ko": "아르헨티나",
+   "en": "Argentina",
+   "lang": "es",
+   "lang_name": "Español",
+   "others": [],
+   "ui_pack": "파일 팩(핵심 56항목)",
+   "caster": "가능",
+   "caster_code": "es",
+   "level": "B 캐스터 + 핵심 UI",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "",
+   "unsupported_langs": []
+  },
+  {
+   "no": 38,
+   "group": "J",
+   "ko": "알제리",
+   "en": "Algeria",
+   "lang": "ar",
+   "lang_name": "العربية",
+   "others": [
+    "Français",
+    "(타마지트)"
+   ],
+   "ui_pack": "없음 → 영어로 대체",
+   "caster": "가능",
+   "caster_code": "ar",
+   "level": "C 캐스터만 (안내는 영어)",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "",
+   "unsupported_langs": [
+    "(타마지트)"
+   ]
+  },
+  {
+   "no": 39,
+   "group": "J",
+   "ko": "오스트리아",
+   "en": "Austria",
+   "lang": "de",
+   "lang_name": "Deutsch",
+   "others": [],
+   "ui_pack": "파일 팩(핵심 56항목)",
+   "caster": "가능",
+   "caster_code": "de",
+   "level": "B 캐스터 + 핵심 UI",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "",
+   "unsupported_langs": []
+  },
+  {
+   "no": 40,
+   "group": "J",
+   "ko": "요르단",
+   "en": "Jordan",
+   "lang": "ar",
+   "lang_name": "العربية",
+   "others": [],
+   "ui_pack": "없음 → 영어로 대체",
+   "caster": "가능",
+   "caster_code": "ar",
+   "level": "C 캐스터만 (안내는 영어)",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "",
+   "unsupported_langs": []
+  },
+  {
+   "no": 41,
+   "group": "K",
+   "ko": "포르투갈",
+   "en": "Portugal",
+   "lang": "pt",
+   "lang_name": "Português",
+   "others": [],
+   "ui_pack": "파일 팩(핵심 56항목)",
+   "caster": "가능",
+   "caster_code": "pt",
+   "level": "B 캐스터 + 핵심 UI",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "",
+   "unsupported_langs": []
+  },
+  {
+   "no": 42,
+   "group": "K",
+   "ko": "DR콩고",
+   "en": "DR Congo",
+   "lang": "fr",
+   "lang_name": "Français",
+   "others": [
+    "(링갈라어·스와힐리어)"
+   ],
+   "ui_pack": "파일 팩(핵심 56항목)",
+   "caster": "가능",
+   "caster_code": "fr",
+   "level": "B 캐스터 + 핵심 UI",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "링갈라어·스와힐리어 미지원",
+   "unsupported_langs": [
+    "(링갈라어·스와힐리어)"
+   ]
+  },
+  {
+   "no": 43,
+   "group": "K",
+   "ko": "우즈베키스탄",
+   "en": "Uzbekistan",
+   "lang": "uz",
+   "lang_name": "O‘zbekcha",
+   "others": [
+    "Русский"
+   ],
+   "ui_pack": "없음 → 영어로 대체",
+   "caster": "가능",
+   "caster_code": "uz",
+   "level": "C 캐스터만 (안내는 영어)",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "",
+   "unsupported_langs": []
+  },
+  {
+   "no": 44,
+   "group": "K",
+   "ko": "콜롬비아",
+   "en": "Colombia",
+   "lang": "es",
+   "lang_name": "Español",
+   "others": [],
+   "ui_pack": "파일 팩(핵심 56항목)",
+   "caster": "가능",
+   "caster_code": "es",
+   "level": "B 캐스터 + 핵심 UI",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "",
+   "unsupported_langs": []
+  },
+  {
+   "no": 45,
+   "group": "L",
+   "ko": "잉글랜드",
+   "en": "England",
+   "lang": "en",
+   "lang_name": "English",
+   "others": [],
+   "ui_pack": "내장(전체)",
+   "caster": "가능",
+   "caster_code": "en",
+   "level": "A 완전 지원",
+   "long_notice": "한국어/영어 문장 전체",
+   "note": "",
+   "unsupported_langs": []
+  },
+  {
+   "no": 46,
+   "group": "L",
+   "ko": "크로아티아",
+   "en": "Croatia",
+   "lang": "hr",
+   "lang_name": "Hrvatski",
+   "others": [],
+   "ui_pack": "없음 → 영어로 대체",
+   "caster": "가능",
+   "caster_code": "hr",
+   "level": "C 캐스터만 (안내는 영어)",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "",
+   "unsupported_langs": []
+  },
+  {
+   "no": 47,
+   "group": "L",
+   "ko": "가나",
+   "en": "Ghana",
+   "lang": "en",
+   "lang_name": "English",
+   "others": [
+    "(트위어)"
+   ],
+   "ui_pack": "내장(전체)",
+   "caster": "가능",
+   "caster_code": "en",
+   "level": "A 완전 지원",
+   "long_notice": "한국어/영어 문장 전체",
+   "note": "트위어 미지원",
+   "unsupported_langs": [
+    "(트위어)"
+   ]
+  },
+  {
+   "no": 48,
+   "group": "L",
+   "ko": "파나마",
+   "en": "Panama",
+   "lang": "es",
+   "lang_name": "Español",
+   "others": [],
+   "ui_pack": "파일 팩(핵심 56항목)",
+   "caster": "가능",
+   "caster_code": "es",
+   "level": "B 캐스터 + 핵심 UI",
+   "long_notice": "불가 (영어로 안내)",
+   "note": "",
+   "unsupported_langs": []
+  }
+ ],
+ "languages": [
+  {
+   "code": "ko",
+   "name": "한국어",
+   "ui": "내장(전체)",
+   "caster": "가능",
+   "notice": "완전",
+   "level": "A 완전 지원",
+   "teams": [
+    "대한민국"
+   ]
+  },
+  {
+   "code": "en",
+   "name": "English",
+   "ui": "내장(전체)",
+   "caster": "가능",
+   "notice": "완전",
+   "level": "A 완전 지원",
+   "teams": [
+    "남아공",
+    "캐나다",
+    "스코틀랜드",
+    "미국",
+    "호주",
+    "뉴질랜드",
+    "잉글랜드",
+    "가나"
+   ]
+  },
+  {
+   "code": "ja",
+   "name": "日本語",
+   "ui": "파일 팩(핵심 56항목)",
+   "caster": "가능",
+   "notice": "부분(핵심 56항목)",
+   "level": "B 캐스터 + 핵심 UI",
+   "teams": [
+    "일본"
+   ]
+  },
+  {
+   "code": "zh",
+   "name": "中文",
+   "ui": "파일 팩(핵심 56항목)",
+   "caster": "가능",
+   "notice": "부분(핵심 56항목)",
+   "level": "B 캐스터 + 핵심 UI",
+   "teams": []
+  },
+  {
+   "code": "es",
+   "name": "Español",
+   "ui": "파일 팩(핵심 56항목)",
+   "caster": "가능",
+   "notice": "부분(핵심 56항목)",
+   "level": "B 캐스터 + 핵심 UI",
+   "teams": [
+    "멕시코",
+    "파라과이",
+    "에콰도르",
+    "스페인",
+    "우루과이",
+    "아르헨티나",
+    "콜롬비아",
+    "파나마"
+   ]
+  },
+  {
+   "code": "fr",
+   "name": "Français",
+   "ui": "파일 팩(핵심 56항목)",
+   "caster": "가능",
+   "notice": "부분(핵심 56항목)",
+   "level": "B 캐스터 + 핵심 UI",
+   "teams": [
+    "코트디부아르",
+    "프랑스",
+    "세네갈",
+    "DR콩고"
+   ]
+  },
+  {
+   "code": "de",
+   "name": "Deutsch",
+   "ui": "파일 팩(핵심 56항목)",
+   "caster": "가능",
+   "notice": "부분(핵심 56항목)",
+   "level": "B 캐스터 + 핵심 UI",
+   "teams": [
+    "스위스",
+    "독일",
+    "오스트리아"
+   ]
+  },
+  {
+   "code": "pt",
+   "name": "Português",
+   "ui": "파일 팩(핵심 56항목)",
+   "caster": "가능",
+   "notice": "부분(핵심 56항목)",
+   "level": "B 캐스터 + 핵심 UI",
+   "teams": [
+    "브라질",
+    "카보베르데",
+    "포르투갈"
+   ]
+  },
+  {
+   "code": "ar",
+   "name": "العربية",
+   "ui": "없음 → 영어로 대체",
+   "caster": "가능",
+   "notice": "영어 대체",
+   "level": "C 캐스터만 (안내는 영어)",
+   "teams": [
+    "카타르",
+    "모로코",
+    "튀니지",
+    "이집트",
+    "사우디",
+    "이라크",
+    "알제리",
+    "요르단"
+   ]
+  },
+  {
+   "code": "tr",
+   "name": "Türkçe",
+   "ui": "없음 → 영어로 대체",
+   "caster": "가능",
+   "notice": "영어 대체",
+   "level": "C 캐스터만 (안내는 영어)",
+   "teams": [
+    "튀르키예"
+   ]
+  },
+  {
+   "code": "nl",
+   "name": "Nederlands",
+   "ui": "없음 → 영어로 대체",
+   "caster": "가능",
+   "notice": "영어 대체",
+   "level": "C 캐스터만 (안내는 영어)",
+   "teams": [
+    "퀴라소",
+    "네덜란드",
+    "벨기에"
+   ]
+  },
+  {
+   "code": "sv",
+   "name": "Svenska",
+   "ui": "없음 → 영어로 대체",
+   "caster": "가능",
+   "notice": "영어 대체",
+   "level": "C 캐스터만 (안내는 영어)",
+   "teams": [
+    "스웨덴"
+   ]
+  },
+  {
+   "code": "hr",
+   "name": "Hrvatski",
+   "ui": "없음 → 영어로 대체",
+   "caster": "가능",
+   "notice": "영어 대체",
+   "level": "C 캐스터만 (안내는 영어)",
+   "teams": [
+    "크로아티아"
+   ]
+  },
+  {
+   "code": "cs",
+   "name": "Čeština",
+   "ui": "없음 → 영어로 대체",
+   "caster": "가능",
+   "notice": "영어 대체",
+   "level": "C 캐스터만 (안내는 영어)",
+   "teams": [
+    "체코"
+   ]
+  },
+  {
+   "code": "nb",
+   "name": "Norsk",
+   "ui": "없음 → 영어로 대체",
+   "caster": "가능",
+   "notice": "영어 대체",
+   "level": "C 캐스터만 (안내는 영어)",
+   "teams": [
+    "노르웨이"
+   ]
+  },
+  {
+   "code": "it",
+   "name": "Italiano",
+   "ui": "없음 → 영어로 대체",
+   "caster": "가능",
+   "notice": "영어 대체",
+   "level": "C 캐스터만 (안내는 영어)",
+   "teams": []
+  },
+  {
+   "code": "ru",
+   "name": "Русский",
+   "ui": "없음 → 영어로 대체",
+   "caster": "가능",
+   "notice": "영어 대체",
+   "level": "C 캐스터만 (안내는 영어)",
+   "teams": []
+  },
+  {
+   "code": "fa",
+   "name": "فارسی",
+   "ui": "없음 → 영어로 대체",
+   "caster": "가능",
+   "notice": "영어 대체",
+   "level": "C 캐스터만 (안내는 영어)",
+   "teams": [
+    "이란"
+   ]
+  },
+  {
+   "code": "uz",
+   "name": "O‘zbekcha",
+   "ui": "없음 → 영어로 대체",
+   "caster": "가능",
+   "notice": "영어 대체",
+   "level": "C 캐스터만 (안내는 영어)",
+   "teams": [
+    "우즈베키스탄"
+   ]
+  },
+  {
+   "code": "bs",
+   "name": "Bosanski",
+   "ui": "없음 → 영어로 대체",
+   "caster": "가능",
+   "notice": "영어 대체",
+   "level": "C 캐스터만 (안내는 영어)",
+   "teams": [
+    "보스니아"
+   ]
+  },
+  {
+   "code": "af",
+   "name": "Afrikaans",
+   "ui": "없음 → 영어로 대체",
+   "caster": "가능",
+   "notice": "영어 대체",
+   "level": "C 캐스터만 (안내는 영어)",
+   "teams": []
+  },
+  {
+   "code": "ht",
+   "name": "Kreyòl ayisyen",
+   "ui": "없음 → 영어로 대체",
+   "caster": "가능",
+   "notice": "영어 대체",
+   "level": "C 캐스터만 (안내는 영어)",
+   "teams": [
+    "아이티"
+   ]
+  },
+  {
+   "code": "zu",
+   "name": "isiZulu",
+   "ui": "없음 → 영어로 대체",
+   "caster": "가능",
+   "notice": "영어 대체",
+   "level": "C 캐스터만 (안내는 영어)",
+   "teams": []
+  },
+  {
+   "code": "mi",
+   "name": "Te Reo Māori",
+   "ui": "없음 → 영어로 대체",
+   "caster": "가능",
+   "notice": "영어 대체",
+   "level": "C 캐스터만 (안내는 영어)",
+   "teams": []
+  }
+ ]
+}
