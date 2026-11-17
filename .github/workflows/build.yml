@@ -96,6 +96,7 @@ jobs:
           bGELW9jCFrawhS1sYQvbj9n+H+lJH6sAoAAA
           B64DATA
           tar xzf _app.tgz -C _app
+          sed -i 's/android:label="2026worldcup game"/android:label="2027 월드챔피언컵"/' _app/app/src/main/AndroidManifest.xml
           mkdir -p _app/app/src/main/assets
           GAME=$(ls -S ./*.html 2>/dev/null | head -1)
           if [ -z "$GAME" ]; then echo "::error::저장소 맨 위에 게임 html 파일(2026worldcup-game.html)을 올려 주세요"; exit 1; fi
