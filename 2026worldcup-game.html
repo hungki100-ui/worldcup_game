@@ -931,6 +931,24 @@ if(bem){const old=bem.onclick;bem.onclick=function(){old&&old.apply(this,argumen
   const g=document.createElement('button');g.id='gogame';g.type='button';g.textContent='⚽ 게임으로 가기';g.onclick=()=>{o.classList.remove('show');try{f&&f.remove();}catch(e){}try{window.__fsOn&&0;}catch(e){}const m=$('bm');if(m)m.click();};o.appendChild(g);
   const a=row.querySelector('.on');if(a&&a.scrollIntoView)a.scrollIntoView({inline:'center',block:'nearest'});O.walk(o);}catch(e){O.err=String(e);}};
   const home=$('home');if(home){const p=document.createElement('button');p.id='lgp';p.type='button';p.setAttribute('aria-label','Language');const sync=()=>{p.textContent='🌐 '+cur.toUpperCase();};sync();p.onclick=()=>bem.click();home.appendChild(p);const _s=O.setLang;O.setLang=async function(l){await _s(l);sync();};}}
+
+// ---- 시작(앰블럼) 화면(#csp): 메인 화면 전에 언어 선택
+try{
+const SP={en:['2027 World Champion','Tap the screen to start'],ko:['2027 월드챔피언','화면을 터치하면 시작'],ja:['2027 ワールドチャンピオン','画面をタッチして開始'],zh:['2027 世界冠军','触摸屏幕开始'],es:['2027 Campeón del Mundo','Toca la pantalla para empezar'],fr:['2027 Champion du Monde','Touchez l’écran pour commencer'],de:['2027 Weltmeister','Bildschirm berühren zum Starten'],pt:['2027 Campeão Mundial','Toque na tela para começar'],ar:['بطل العالم 2027','المس الشاشة للبدء'],tr:['2027 Dünya Şampiyonu','Başlamak için ekrana dokunun'],nl:['2027 Wereldkampioen','Tik op het scherm om te starten'],sv:['2027 Världsmästare','Tryck på skärmen för att starta'],hr:['2027 Svjetski prvak','Dodirnite zaslon za početak'],cs:['2027 Mistr světa','Klepnutím na obrazovku začnete'],nb:['2027 Verdensmester','Trykk på skjermen for å starte'],it:['2027 Campione del Mondo','Tocca lo schermo per iniziare'],ru:['2027 Чемпион мира','Коснитесь экрана, чтобы начать'],fa:['قهرمان جهان 2027','برای شروع صفحه را لمس کنید'],uz:['2027 Jahon chempioni','Boshlash uchun ekranga tegining'],bs:['2027 Svjetski prvak','Dodirnite ekran za početak'],af:['2027 Wêreldkampioen','Raak die skerm aan om te begin'],ht:['2027 Chanpyon Mondyal','Manyen ekran an pou kòmanse'],zu:['2027 Ibhodi Lomhlaba','Thinta isikrini ukuze uqale'],mi:['2027 Toa o te Ao','Pāpā te mata hei tīmata']};
+const csp=$('csp');
+if(csp){
+ const sty=document.createElement('style');sty.textContent='#lgrow2{position:absolute;left:0;right:0;bottom:calc(46px + env(safe-area-inset-bottom,0px));z-index:5;display:flex;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch;padding:6px max(14px,env(safe-area-inset-right)) 8px max(14px,env(safe-area-inset-left));scrollbar-width:none;align-items:center}#lgrow2::-webkit-scrollbar{display:none}#lgrow2 i{flex:0 0 auto;font-style:normal;font-size:16px;opacity:.85;color:#fff}#lgrow2 button{flex:0 0 auto;padding:7px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.28);background:rgba(0,0,0,.45);color:#fff;font-size:13px;font-weight:700;white-space:nowrap;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}#lgrow2 button.on{background:linear-gradient(150deg,#f4c542,#c8921a);color:#1a1200;border-color:#f4c542}';document.head.appendChild(sty);
+ const row=document.createElement('div');row.id='lgrow2';row.setAttribute('data-nox','1');
+ const gl=document.createElement('i');gl.textContent='🌐';row.appendChild(gl);
+ UN.forEach(u=>{const b=document.createElement('button');b.type='button';b.dataset.l=u[0];b.textContent=u[1];if(u[0]===cur)b.className='on';b.onclick=ev=>{ev.stopPropagation();O.setLang(u[0]);};row.appendChild(b);});
+ ['pointerdown','pointerup','touchstart','click'].forEach(ev=>row.addEventListener(ev,e=>e.stopPropagation()));
+ csp.appendChild(row);
+ const spTxt=()=>{try{const f=csp.querySelector('iframe'),d=f&&f.contentDocument;if(!d)return;const v=SP[cur]||SP.en,t=d.querySelector('.tip'),n=d.getElementById('nm');if(t){t.textContent=v[1];t.dir=(cur==='ar'||cur==='fa')?'rtl':'ltr';}if(n)n.textContent=v[0];}catch(e){}};
+ const _s2=O.setLang;O.setLang=async function(l){await _s2(l);try{row.querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.l===l));}catch(e){}spTxt();setTimeout(spTxt,300);setTimeout(spTxt,1200);};
+ const a2=row.querySelector('.on');if(a2&&a2.scrollIntoView)try{a2.scrollIntoView({inline:'center',block:'nearest'});}catch(e){}
+ setTimeout(spTxt,600);setTimeout(spTxt,2000);
+}
+}catch(e){window.__OLGerr2=String(e);}
 O.setLang(cur);
 }catch(e){window.__OLGerr=String(e);}})();
 </script></body></html>
