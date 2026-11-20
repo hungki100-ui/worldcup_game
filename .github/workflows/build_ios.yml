@@ -1,0 +1,67 @@
+name: Build iOS IPA
+
+on:
+push:
+branches: [ main, master ]
+tags: [ 'v*' ]
+workflow_dispatch:
+
+permissions:
+contents: write
+
+jobs:
+build-ipa:
+name: Build iOS (.ipa)
+runs-on: macos-latest
+
+steps:
+  - name: Checkout repository
+    uses: actions/checkout@v4
+
+  - name: Copy HTML Game & Assets to iOS Bundle
+    run: |
+      mkdir -p ios/WebAssets
+      cp champions-football.html ios/WebAssets/
+      [ -d "국가" ] && cp -r "국가" ios/WebAssets/ || true
+      [ -d "아이콘" ] && cp -r "아이콘" ios/WebAssets/ || true
+      [ -d "anthem" ] && cp -r "anthem" ios/WebAssets/ || true
+
+  - name: Install XcodeGen
+    run: brew install xcodegen
+
+  - name: Generate Xcode Project
+    working-directory: ios
+    run: xcodegen generate
+
+  - name: Build Unsigned Archive
+    working-directory: ios
+    run: |
+      xcodebuild clean archive \
+        -project ChampionsFootball.xcodeproj \
+        -scheme ChampionsFootball \
+        -configuration Release \
+        -archivePath build/ChampionsFootball.xcarchive \
+        CODE_SIGN_IDENTITY="" \
+        CODE_SIGNING_REQUIRED=NO \
+        CODE_SIGNING_ALLOWED=NO
+
+  - name: Package IPA
+    working-directory: ios
+    run: |
+      mkdir -p Payload
+      cp -r build/ChampionsFootball.xcarchive/Products/Applications/ChampionsFootball.app Payload/
+      # 앱 내부 번들에 HTML과 국가/아이콘 폴더가 정확히 위치하도록 복사
+      cp -r WebAssets/* Payload/ChampionsFootball.app/
+      zip -r champions-football.ipa Payload
+
+  - name: Upload IPA Artifact
+    uses: actions/upload-artifact@v4
+    with:
+      name: champions-football-ipa
+      path: ios/champions-football.ipa
+
+  - name: Attach IPA to GitHub Release (if tag)
+    if: startsWith(github.ref, 'refs/tags/')
+    uses: softprops/action-gh-release@v2
+    with:
+      files: ios/champions-football.ipa
